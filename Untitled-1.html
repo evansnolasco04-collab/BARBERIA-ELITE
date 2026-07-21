@@ -1,0 +1,386 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BARBERÍA ELITE</title>
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #070000;
+        color: white;
+    }
+
+    header {
+        background: #080808;
+        padding: 20px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .logo {
+        font-size: 40px;
+        font-weight: bold;
+        color: #d8b800;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+        transition: .3s;
+    }
+
+    nav a:hover {
+        color: #d8b829;
+    }
+
+    .hero {
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        padding: 50px 8%;
+        background:
+            linear-gradient(
+                rgba(0,0,0,.65),
+                rgba(0,0,0,.65)
+            ),
+            url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1")
+            center/cover;
+    }
+
+    .hero-content {
+        max-width: 600px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+        color: #ddbd05e1;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-bottom: 30px;
+        color: #f0ebeb;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 15px 25px;
+        background: #fdcb01;
+        color: #111;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: .3s;
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+        background: #fff;
+    }
+
+    section {
+        padding: 80px 8%;
+    }
+
+    .titulo {
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    .titulo span {
+        color: #d4af37;
+    }
+
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(220px, 1fr)
+        );
+        gap: 25px;
+    }
+
+    .servicio {
+        background: #1b1b1b;
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+        transition: .3s;
+        border: 1px solid #333;
+    }
+
+    .servicio:hover {
+        transform: translateY(-10px);
+        border-color: #d4af37;
+    }
+
+    .servicio h3 {
+        color: #d4af37;
+        margin-bottom: 15px;
+    }
+
+    .precio {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(250px, 1fr)
+        );
+        gap: 20px;
+    }
+
+    .galeria img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: .3s;
+    }
+
+    .galeria img:hover {
+        transform: scale(1.03);
+    }
+
+    .contacto {
+        text-align: center;
+        background: #2d2e2d;
+    }
+
+    .contacto p {
+        margin: 15px;
+        font-size: 18px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px;
+        background: #080808;
+        color: #aaa;
+    }
+
+    @media (max-width: 700px) {
+
+        header {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav a {
+            margin: 0 8px;
+            font-size: 14px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+        }
+
+    }
+
+</style>
+
+</head><body><header>
+
+    <div class="logo">
+        BARBERÍA ELITE
+    </div>
+
+    <nav>
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#servicios">Servicios</a>
+
+        <a href="#galeria">Galería</a>
+
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+
+</header>
+
+
+<section class="hero" id="inicio">
+
+    <div class="hero-content">
+
+        <h1>
+            TU ESTILO.
+            <span>TU PRESENCIA.</span>
+        </h1>
+
+        <p>
+            Cortes profesionales y estilos únicos
+            para que salgas con tu mejor versión.
+        </p>
+
+        <a
+            class="btn"
+            href="https://wa.me/51999999999"
+            target="_blank"
+        >
+            RESERVAR CITA
+        </a>
+
+    </div>
+
+</section>
+
+
+<section id="servicios">
+
+    <h2 class="titulo">
+        NUESTROS <span>SERVICIOS</span>
+    </h2>
+
+    <div class="servicios">
+
+
+        <div class="servicio">
+
+            <h3>CORTE CLÁSICO</h3>
+
+            <p>
+                Un estilo limpio y elegante
+                para cualquier ocasión.
+            </p>
+
+            <div class="precio">
+                S/ 15
+            </div>
+
+        </div>
+
+
+        <div class="servicio">
+
+            <h3>FADE</h3>
+
+            <p>
+                Degradado moderno y personalizado.
+            </p>
+
+            <div class="precio">
+                S/ 20
+            </div>
+
+        </div>
+
+
+        <div class="servicio">
+
+            <h3>CORTE + BARBA</h3>
+
+            <p>
+                El combo perfecto para renovar
+                completamente tu estilo.
+            </p>
+
+            <div class="precio">
+                S/ 25
+            </div>
+
+        </div>
+
+
+        <div class="servicio">
+
+            <h3>DISEÑO PREMIUM</h3>
+
+            <p>
+                Un estilo personalizado
+                completamente para ti.
+            </p>
+
+            <div class="precio">
+                S/ 35
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section id="galeria">
+
+    <h2 class="titulo">
+        NUESTROS <span>TRABAJOS</span>
+    </h2>
+
+    <div class="galeria">
+
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033">
+
+        <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a">
+
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c">
+
+    </div>
+
+</section>
+
+
+<section class="contacto" id="contacto">
+
+    <h2 class="titulo">
+        ¿LISTO PARA TU <span>NUEVO ESTILO?</span>
+    </h2>
+
+    <p>
+        📍 Av. Principal 123
+    </p>
+
+    <p>
+        🕒 Lunes a sábado: 9:00 AM - 8:00 PM
+    </p>
+
+    <p>
+        📱 +51 999 999 999
+    </p>
+
+    <br>
+
+    <a
+        class="btn"
+        href="https://wa.me/51999999999"
+        target="_blank"
+    >
+        ESCRIBIR POR WHATSAPP
+    </a>
+
+</section>
+
+
+<footer>
+
+    © 2026 BARBERÍA ELITE.
+    Todos los derechos reservados.
+
+</footer>
+
+</body></html>
